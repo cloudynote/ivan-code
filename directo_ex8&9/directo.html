@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ivan's Coffee Shop</title>
+        <link rel="stylesheet" type="text/css" href="directo.css">
+    </head>
+    <body>
+
+        <!-- Ivan Kevin F. Directo -->
+        <!-- U-4L -->
+        <!-- Cafe Order Form using HTML & CSS-->
+
+
+        <header id="header_section">
+            <h1>Ivan's Coffee Shop</h1>
+            <p>Best Coffe & Cafe Order Form</p>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#order">Order Form</a>
+            </nav>
+        </header>
+
+        <section id="home" class="home_section">
+            <img src="kape.jpeg" alt="Coffee shop background" class="home_image">
+            <h2>Coffee from Ivan's Coffee Shop</h2>
+            <a href="#order" class="shop_button">Shop Now</a>
+        </section>
+
+        <section id="products" class="products_section">
+            <h2>Best Seller Products</h2>
+            <p>Choose from our coffee products.</p>
+
+            <div class="product_container">
+
+                <div class="product_box">
+                    <img src="americano.jpg" alt="Americano coffee" class="product_image">
+                    <h3>Americano</h3>
+                    <p>Price: 100 Php</p>
+                </div>
+
+                <div class="product_box">
+                    <img src="latte.jpg" alt="Latte coffee" class="product_image">
+                    <h3>Latte</h3>
+                    <p>Price: 100 Php</p>
+                </div>
+
+                <div class="product_box">
+                    <img src="cappuccino.jpg" alt="Cappuccino coffee" class="product_image">
+                    <h3>Cappucino</h3>
+                    <p>Price: 100 Php</p>
+                </div>
+
+                <div class="product_box">
+                    <img src="mocha.png" alt="Mocha coffee" class="product_image">
+                    <h3>Mocha</h3>
+                    <p>Price: 100 Php</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="order" class="order_section">
+            <h2>Cafe Order Form</h2>
+
+            <form id="cafe_order_form" name="cafe_order_form">
+
+                <fieldset id="customer_information_fieldset">
+                    <legend>Customer Information</legend>
+
+                    <label>Customer Name: <input id="customer_name" name="customer_name" required type="text"></label>
+                    <br>
+                    <label>Mobile Number: <input id="mobile_number" name="mobile_number" placeholder="09XXXXXXXXX" required type="tel" pattern="09[0-9]{9}"></label>
+                    <br>
+                    <label>Email Address: <input id="email_address" name="email_address" required type="email"></label>
+                </fieldset>
+
+                <fieldset id="cafe_order_fieldset">
+                    <legend>Cafe Order Details</legend>
+
+                    <label>Number of Drinks: <input id="number_of_drinks" name="number_of_drinks" required type="number" min="1" max="10"></label>
+                    <br>
+
+                    <label>Drink Type:
+                        <select id="drink_type" name="drink_type">
+                            <option value="americano" selected>Americano</option>
+                            <option value="latte">Latte</option>
+                            <option value="cappucino">Cappucino</option>
+                            <option value="mocha">Mocha</option>
+                            <option value="caramel_macchiato">Caramel Macchiato</option>
+                        </select>
+                    </label>
+
+                    <h3>Cup Size</h3>
+                    <label><input id="tall" name="cup_size" value="tall" type="radio" checked> Tall</label><br>
+                    <label><input id="grande" name="cup_size" value="grande" type="radio"> Grande</label><br>
+                    <label><input id="venti" name="cup_size" value="venti" type="radio"> Venti</label>
+
+                    <h3>Drink Temperature</h3>
+                    <label><input id="hot" name="drink_temperature" value="hot" type="radio"> Hot</label><br>
+                    <label><input id="iced" name="drink_temperature" value="iced" type="radio" checked> Iced</label>
+
+                    <h3>Drink Add-ons</h3>
+                    <label><input id="extra_espresso_shot" name="drink_addons" value="extra_espresso_shot" type="checkbox"> Extra Espresso Shot</label><br>
+                    <label><input id="vanilla_syrup" name="drink_addons" value="vanilla_syrup" type="checkbox"> Vanilla Syrup</label><br>
+                    <label><input id="caramel_drizzle" name="drink_addons" value="caramel_drizzle" type="checkbox"> Caramel Drizzle</label>
+                </fieldset>
+
+                <fieldset id="pastry_order_fieldset">
+                    <legend>Pastry Order Details</legend>
+
+                    <h3>Pastries</h3>
+                    <label><input id="croissant" name="pastries" value="croissant" type="checkbox"> Croissant</label><br>
+                    <label><input id="brownie" name="pastries" value="brownie" type="checkbox"> Brownie</label><br>
+                    <label><input id="cinnamon_roll" name="pastries" value="cinnamon_roll" type="checkbox"> Cinnamon Roll</label><br>
+                    <label><input id="cookies" name="pastries" value="cookies" type="checkbox"> Cookies</label>
+                </fieldset>
+
+                <fieldset id="pickup_delivery_fieldset">
+                    <legend>Pickup/Delivery Details</legend>
+
+                    <h3>Order Type</h3>
+                    <label><input id="pickup" name="order_type" value="pickup" type="radio" checked> Pickup</label><br>
+                    <label><input id="delivery" name="order_type" value="delivery" type="radio"> Delivery</label>
+
+                    <h3>Pickup/Delivery Address</h3>
+                    <label>Address:</label><br>
+                    <textarea id="order_address" name="order_address" rows="5" cols="40" required></textarea>
+                    <br>
+
+                    <label>Order Date: <input id="order_date" name="order_date" required type="date"></label>
+                    <br>
+                    <label>Order Time: <input id="order_time" name="order_time" required type="time"></label>
+                </fieldset>
+
+                <button id="submit_button" name="submit_button" type="submit">Submit Order</button>
+                <button id="reset_button" name="reset_button" type="reset">Clear Form</button>
+
+            </form>
+        </section>
+        <footer>
+            <p>Ivan's Coffee Shop - 2026</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+body {
+    background-color: whitesmoke;
+    color: saddlebrown;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: wheat;
+    text-align: center;
+}
+
+h2 {
+    color: maroon;
+    text-align: center;
+}
+
+h3 {
+    color: sienna;
+}
+
+#header_section {
+    background-color: saddlebrown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#header_section p {
+    color: wheat;
+}
+
+#header_section a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#customer_information_fieldset {
+    background-color: floralwhite;
+}
+
+#cafe_order_fieldset {
+    background-color: bisque;
+}
+
+#pastry_order_fieldset {
+    background-color: floralwhite;
+}
+
+#pickup_delivery_fieldset {
+    background-color: bisque;
+}
+
+.home_section {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.home_image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.shop_button {
+    background-color: sienna;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.products_section {
+    padding: 30px;
+    text-align: center;
+}
+
+.product_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product_box {
+    background-color: white;
+    border: 1px solid tan;
+    padding: 15px;
+    width: 200px;
+}
+
+.product_image {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.order_section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid tan;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+legend {
+    background-color: white;
+    color: maroon;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    margin: 5px;
+    padding: 7px;
+}
+
+button {
+    background-color: maroon;
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: saddlebrown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#header_section h1 {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 0 0 8px;
+}
+
+.home_section h2 {
+    color: wheat;
+}
+@media (max-width: 640px) {
+    #header_section {
+        padding: 18px 14px;
+    }
+
+    #header_section h1 {
+        font-size: 42px;
+    }
+
+    #header_section a {
+        display: inline-block;
+        margin: 6px 8px;
+    }
+
+    .home_section {
+        padding: 18px 14px 28px;
+    }
+
+    .home_image {
+        height: 220px;
+    }
+
+    .home_section h2 {
+        font-size: 22px;
+        line-height: 1.35;
+    }
+
+    .products_section {
+        padding: 24px 14px;
+    }
+
+    .product_box {
+        width: min(100%, 260px);
+    }
+
+    .order_section {
+        margin: 12px auto;
+        padding: 14px;
+    }
+
+    fieldset {
+        padding: 14px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
